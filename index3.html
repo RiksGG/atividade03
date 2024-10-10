@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <a href="index.html">Principal    |</a>
+        <a href="index2.html">Tinkercad    |</a>
+        <a href="index3.html">Código C++   |</a>
+        <a href="index4.html">Java</a>
+    </div>
+    <h1>O que é Código C++ ?</h1>
+    <p> é uma linguagem de programação compilada multi-paradigma (seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.</p>
+    <a href="https://pt.wikipedia.org/wiki/C%2B%2B">Fonte:Wikipedia</a>
+    <p>______________________________________________________________________________________________________________________________________________________</p>
+    <br>
+    <h1>Imagem para exemplificação do Arduíno IDE e do código c++ em texto respectivamente:</h1>
+    <img src="Sem título5.jpg" alt="Arduíno IDE">
+    <br>
+    <h1>Código C++ em texto</h1>
+    <code>
+            <pre>
+int Pot1 = 0;
+
+int Pot2 = 0;
+            
+int res = 0;
+            
+ void setup()
+{
+pinMode(12, OUTPUT);
+pinMode(A0, INPUT);
+Serial.begin(9600);
+pinMode(A1, INPUT);
+            
+Pot1 = 0;
+Pot2 = 0;
+res = 0;
+digitalWrite(12, LOW);
+}
+            
+{
+Pot1 += analogRead(A0);
+Serial.println("Pot1-----------------");
+Serial.println(Pot1);
+Pot2 = analogRead(A1);
+Serial.println("Pot2-------------");
+Serial.println(Pot2);
+if (Pot1 > Pot2) {
+res += (Pot1 + Pot2);
+Serial.println("res----------------");
+Serial.println(res);
+digitalWrite(12, HIGH);
+} else {
+digitalWrite(12, LOW);
+}
+delay(10); // Delay a little bit to improve simulation performance
+}
+            </pre>
+    </code>
+    
+    
+ 
+    
+</body>
+</html>

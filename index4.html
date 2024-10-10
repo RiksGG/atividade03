@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <a href="index.html">Principal    |</a>
+        <a href="index2.html">Tinkercad    |</a>
+        <a href="index3.html">Código C++   |</a>
+        <a href="index4.html">Java</a>
+    </div>
+    <h1>O que é Java ?</h1>
+    <p>Java é uma linguagem de programação orientada a objeto, multiplataforma que é executada em bilhões de dispositivos em todo o mundo. Ele capacita aplicativos, sistemas operacionais de smartphones, software empresarial e muitos programas conhecidos.</p>
+    <br>
+    <a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-java-programming-language#:~:text=Java%20%7C%20Microsoft%20Azure.-,O%20que%20%C3%A9%20o%20Java%3F,empresarial%20e%20muitos%20programas%20conhecidos.">Fonte:Microsoft</a>
+    <p>______________________________________________________________________________________________________________________________________________________</p>
+    <br>
+    <h1>Imagem para exemplificação do Java:</h1>
+    <img src="Sem título7.jpg" alt="Arduíno IDE">
+    <br>
+    <h1>Java em texto</h1>
+    <code>
+        <pre>
+import java.util.Scanner;
+
+public class Programa4 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+int pot1 = 0, pot2 = 0, res = 0;
+boolean led = false;
+
+System.out.print("Digite o valor do sensor potenciômetro 1: ");
+pot1 = sc.nextInt();
+System.out.print("Digite o valor do sensor potenciômetro 2: ");
+pot2 = sc.nextInt();
+
+if(pot1 > pot2){
+res += pot1 + pot2;
+System.out.printf("A resposta é: d% ",res);
+led = true;
+}else{
+led = false;
+}
+sc.close();
+}
+}
+        </pre>
+    </code>
+    
+</body>
+</html>
